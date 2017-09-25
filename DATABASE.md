@@ -1,0 +1,9 @@
+DATABASE: pdoposts
+
+CREATE TABLE `pdoposts`.`posts` ( 
+	`id` INT NOT NULL AUTO_INCREMENT , 
+	`title` VARCHAR NOT NULL , 
+	`body` TEXT NOT NULL , 
+	`author` VARCHAR(255) NOT NULL , 
+	`is_published` BOOLEAN NOT NULL DEFAULT TRUE ,
+	`created` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`id`)) ENGINE = InnoDB;
